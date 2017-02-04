@@ -8,10 +8,13 @@ up2date(er) version of https://aur.archlinux.org/packages/linux-vfio
   * could find matching `.patch` and since I don't use it, I was too lazy to review/fix the latest patch
   * latest (I think) patch is taken from https://lkml.org/lkml/2015/3/4/1184 (see: `0001-i915-Add-module-option-to-support-VGA-arbiter-on-HD-.patch`)
 * used `default` ("enter") option for all new flags
-* most important (for my use case was `ACS overrides`)
+* most important (for my use case) was `ACS overrides`
   ```
    f4bio@d3sktop ~  $ uname -a
   Linux d3sktop 4.9.7-1-vfio #2 SMP PREEMPT Sat Feb 4 05:00:28 CET 2017 x86_64 GNU/Linux
+  ```
+
+  ```
    f4bio@d3sktop ~  $ iommu-groups
   IOMMU Group 0 00:00.0 Host bridge [0600]: Intel Corporation 4th Gen Core Processor DRAM Controller [8086:0c00] (rev 06)
   IOMMU Group 10 00:1c.6 PCI bridge [0604]: Intel Corporation 8 Series/C220 Series Chipset Family PCI Express Root Port #7 [8086:8c1c] (rev d5)
